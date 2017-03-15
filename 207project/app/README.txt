@@ -1,6 +1,6 @@
 To run the app:
 
-Our project is named "TriageApplication" which is placed in the root of our repository. To launch the application, run the main activity. If this doesn't work, make sure that the patient_records.txt file appears in the /data/data/csc207.group0944.triageapplication/files directory. If the file appears here but is empty for whatever reason, remove it and push the correct file to the device. I have tried pushing files into my own device with no success (I suspect this is because my device is not rooted). If this happens, use the emulator instead. We used the Galaxy Nexus, although any virtual device should work. If this still doesn't work, email jurgen.aliaj@mail.utoronto.ca.
+Our project is named "TriageApplication" which is placed in the root of our repository. To launch the application, run the main activity. If this doesn't work, make sure that the patient_records.txt file appears in the /data/data/csc207.group0944.triageapplication/files directory. If the file appears here but is empty for whatever reason, remove it and push the correct file to the device. I have tried pushing files into my own device with no success (I suspect this is because my device is not rooted). If this happens, use the emulator instead. We used the Galaxy Nexus, although any virtual device should work. 
 
 To use the app:
 
