@@ -1,0 +1,16 @@
+November 17 Planning:
+
+a)
+-The project from phase 2 is working and functional.
+
+b)
+-We plan to complete all the back-end for the phase 3 by the next planning meeting. 
+-This includes new classes for the Nurse, Physician and abstract class User.
+-In addition, we expect to complete the sorted by urgency requirement.
+-Finally, we should be able to add attributes to the PatientRecord class which  records whether or not a patient has been seen by a doctor, urgency, and all prescription information.
+-We will deal with the front-end after we complete all of these requirements.
+
+c) (not final yet)
+-Alex will complete the Nurse, Physician and User classes.
+-Jurgen will complete the sorting (and categorizing) requirement.
+-Raymond and Derek will update the new PatientRecord class (Will need to implement HospitalPolicy interface to complete urgency requirement).

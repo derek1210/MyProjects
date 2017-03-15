@@ -1,0 +1,16 @@
+Planning Meeting:
+
+a)
+-Our project so far can load patients from the text file
+-Still lacking the GUI
+-Missing the search function to search for patients
+-Missing Patient VisitRecords
+
+b)
+-By Saturday we plan to complete the VisitRecord class and any remaining features (linear search, saving visit records, etc.). We will create the main Triage Application (the GUI) by Sunday.
+
+c)
+-Derek will work on the VisitRecord class, which will store the patient's vital signs in a Map.
+-Raymond will also create the Main Activity screen (A search box where the nurse can search for a patient by health card number).
+-Jurgen will work on saving the VisitRecord to a file as well as creating an activity to view a patient's record.
+-Alex will work on the activity screen for viewing a patient's visit records.

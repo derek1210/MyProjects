@@ -1,0 +1,12 @@
+Planning Meeting:
+
+a) - We have merged our design from phase 1 and are ready to start planning on splitting the work.
+
+b)
+- We plan to complete features #1 and #2 by Thursday, and we will handle the rest afterwards. (If we have time, we will try to work on the VisitRecord class)
+
+c) 
+- Raymond and Derek will create the PatientRecord class described in our CRC model.
+- Jurgen will handle feature #1 on the feature list by creating a TriageApplication class which will load patient records to the system.
+- Alex will handle feature #2 on the feature list by creating a linear search function which scans all the health card numbers of the patients.
+

@@ -1,0 +1,21 @@
+Data structures used by the following classes:
+
+Patient:
+1. "Name" and "Birthdate" are returned as strings.
+"Health card number" is return as an int.
+"Symtoms"  is returned as a list of strings.
+"Seen By Doctor" returns a string if the patient is seen by a doctor, indicating the date and time; otherwise, it returns false.
+"Arrival Time" is returned as a sting.
+"Urgency" returns the strings "Urgent", "Less Urgent" and "Non Urgent" based on the points that the patient gets.
+"Improving" returns a boolean. It returns true if the patient is getting better; otherwise, it returns false.
+
+Nurse:
+"List Of Patients By Urgency" and "List Of Patients By Arrival Time" return lists of stings.
+
+
+Hospital Policy:
+"Points" returns a int.
+
+
+Format of the files that this application stores its data:
+	There is a separate file storing data for each patient. This file is named according to the health card number of the patient. Within the main file, there are 4 files. The first one is to store a patient's personal information, including his/her name, birthdate, and health card number. The second one is to store a patient's vital signs which allows the nurses to record and update the current situation. The third one stores the text descriptions of  a patient's symptoms. The fourth file stores the date and time that the patient is seen by a doctor. 

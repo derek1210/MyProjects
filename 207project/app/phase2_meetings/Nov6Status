@@ -1,0 +1,14 @@
+Status Meeting:
+
+a)
+-Completed the PatientRecord class
+-Completed part of feature #1 and #2 (we can load the patients from the text file but still need to complete the GUI)
+-Still need to add a search function to search up patients
+
+In other words, we've completed everything we planned on Monday except for the GUI and search function.
+
+b)
+-We plan to complete the things we did not complete from last time, and complete the VisitRecord class along with a function to save visit records to a file (i.e. the reamining 4 features).
+
+c)
+No problems/obstacles preventing us from making progress (apart from lack of time).
