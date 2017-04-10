@@ -1,0 +1,13 @@
+drop schema if exists WEB cascade;
+create schema WEB;
+
+create table persons(
+	id integer primary key,
+	name text,
+	dateOfBirth date,
+	email text
+};
+create table clubs(
+	id integer primary key,
+	name text unique
+);

@@ -1,0 +1,71 @@
+drop schema if exists WEB cascade;
+create schema WEB;
+set search_path to WEB;
+
+create table person(
+	pid SERIAL,
+	name text NOT NULL,
+	dateOfBirth date NOT NULL,
+	email text unique NOT NULL,
+	primary key (pid)
+};
+create table club(
+	cid SERIAL,
+	name text unique NOT NULL,
+	admin integer NOT NULL,
+	primary key (cid),
+	
+	foreign key (admin)
+		references persons(pid)
+);
+create table coach(
+	coachID integer,
+	cid integer,
+	primary key (coachID, cid),
+	
+	foreign key (coachID)
+		references persons(pid) on delete cascade,
+	
+	foreign key (cid)
+		references clubs(cid) on delete cascade
+);
+
+create table player(
+	pid integer,
+	cid integer,
+	
+	primary key(pid, cid),
+	
+	foreign key (pid)
+		references persons(pid) on delete cascade,
+
+	foreign key (cid)
+		references clubs(cid) on delete cascade
+);
+
+
+
+create table event(
+	eid SERIAL,
+	location text NOT NULL,
+	eventDate date NOT NULL,
+	eventType text NOT NULL,
+	deadline date NOT NULL,
+	name text NOT NULL,
+	teamCut integer NOT NULL,
+	organiser integer NOT NULL,
+	primary key (eid),
+);
+
+create table invitation(
+	eid integer,
+	cid integer,
+	status integer NOT NULL,
+	primary key (eid, cid),
+	
+	foreign key (eid)
+		references event(eid) on delete cascade,
+	foreign key (cid)
+		references clubs(cid) on delete cascade
+);
+	

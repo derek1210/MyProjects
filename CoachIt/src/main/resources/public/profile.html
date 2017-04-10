@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CoachIt</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.css"></link>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="js/buildNavBar.js"></script>
+<script src="js/formFunctions.js"></script>
+</head>
+
+<body>
+	<div class="navBarContainer"></div>
+ 	<div>
+      <h1>My Profile</h1>
+      <table>
+		<tr>
+		  <th>Name:</th>
+		  <td id="name"></td>
+		</tr>
+		<tr>
+		  <th>Email:</th>
+		  <td id="email"></td>
+		</tr>
+		<tr>
+		  <th>Teams:</th>
+		  <td>
+		  	<ul id="teams">
+		  	</ul>
+		  </td>
+		</tr>
+	  </table>
+	  <form class="form-inline">
+	  	<div class="form-group">
+	  		<input type="text" id="new_team" class="form-control">
+	  	</div>
+	  	<button type="button" onclick="myFunction()" class="btn btn-danger btn-default">Add team</button>
+	  </form>
+	</div>
+	
+<script>
+	function myFunction() {
+	  var ul = document.getElementById("teams");
+	  var li = document.createElement("li");
+	  var new_team = document.getElementById("new_team").value;
+	  if (new_team) {
+		 li.appendChild(document.createTextNode(new_team));
+	 	 ul.appendChild(li);
+	  }
+	}
+</script>
+</body>
+</html>

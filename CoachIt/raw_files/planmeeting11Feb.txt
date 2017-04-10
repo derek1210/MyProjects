@@ -1,0 +1,27 @@
+Meeting 11 February 2017
+
+Planning Meeting
+
+
+	Things to do:
+
+	* Web server pick a language, set up get requests
+	* Layout of home page and other pages
+
+
+	Web Server Language
+
+	* Django 1.9, Python 3.5 will be used as a backend framework
+	* Goal is to set up a basic web server that can handle clients
+	* After experimenting on local machine, then searching for a simple web host
+	* Sources used:
+		-https://realpython.com/learn/start-django/#django-18
+
+
+	* DB Specifications
+
+		- Players (Person)
+		- Coaches (Person)
+		- Head Coaches (Person)
+		- Persons(ID, Name, DOB, Email)
+		- Event (ID, Name, Location, Date, Type, Deadline, Team_Capacity)

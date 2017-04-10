@@ -1,0 +1,6 @@
+Maverics 3
+Shadow 4
+GoldenJets 5
+Titans 6
+Hammer 7
+Inferno 8
