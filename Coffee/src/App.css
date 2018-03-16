@@ -1,0 +1,214 @@
+.App {
+  background-color: #222;
+  flex: 1;
+  min-height: 100%;
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  display: inline;
+  height: 3em;
+  padding-left: 10px;
+  vertical-align:middle;
+
+}
+/* Header styling */
+.App-header {
+  background-color: #222;
+  color: white;
+  height: 3em;
+
+
+  text-align: left;
+  z-index: 10;
+}
+
+ul.header{
+  display: inline;
+  padding: 0
+}
+
+#login {
+  float: right;
+  padding-top: 10px;
+}
+
+ul.header li{
+  display: inline;
+  list-style-type: none;
+}
+
+ul.header li a{
+  color: #FFF;
+  font-weight: bold;
+  padding: 20px;
+  text-decoration: none;
+}
+
+ul.header li a:hover{
+  text-decoration: underline;
+}
+
+.active{
+  /* background-color: #1DC85B; */
+  text-decoration: underline!important;
+}
+
+@media screen and (max-width: 600px){
+  ul.header{
+    padding: 0
+  }
+}
+
+.App-title {
+  display: inline;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/* Content styling */
+.content{
+    background-color: #222;
+    min-height:100vh;
+}
+
+.gifbox{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 62px;
+}
+
+.gif{
+  display: inline;
+  margin-left: auto;
+  margin-right: auto
+}
+.gif:hover{
+  opacity: 0.5;
+}
+
+h1{
+  color: white
+}
+
+/* Footer Styling */
+.App-footer{
+  background-color: #222;
+  bottom: 0;
+  color: white;
+  margin: auto auto 0 auto;
+  position: fixed;
+  width: 100%
+}
+
+.App-footer p{
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+.l{
+  float: left
+}
+
+.r{
+  float: right
+}
+.App-footer a{
+  color: #FFF;
+}
+.foot{
+  padding-bottom: 5px;
+  vertical-align:middle;
+}
+
+/* Search Boxes */
+
+.searchBar{
+  padding-top: 10px;
+}
+.txtbox{
+  background-color: transparent;
+  bottom:20px;
+  color:white ;
+  font-size:15pt;
+  height:30px;
+  padding: 4px;
+  vertical-align: middle;
+  width:400px;
+}
+
+.cafesize{
+  bottom: 0;
+  height:72px;
+  margin-left: 8px;
+  vertical-align: middle;
+  width:54px;
+}
+
+.cafesize:hover{
+  opacity: 0.5
+}
+
+/* Share buttons */
+.button{
+  height: 50px;
+  width: 50px
+}
+
+.button:hover{
+  opacity: 0.5
+}
+
+.shareBox{
+  padding-top: 40px;
+}
+
+
+label {
+  width:180px;
+  clear:left;
+  text-align:right;
+  padding-right:10px;
+  padding-bottom: 10px;
+}
+
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #1DC85B;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;;
+  padding-right:30px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 60px;
+}
+
+a {
+  color: #1DC85B;
+}
