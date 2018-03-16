@@ -1,4 +1,4 @@
-# Coffee Gif Browser
+# Coffee Gif Browser (currently in progress)
 
 ## Table of Contents
 - [Install](#install)
@@ -18,4 +18,5 @@ $ npm install
 $ npm start
 ```
 
+This is a preview of the website:
 ![Alt text](https://github.com/derek1210/MyProjects/blob/master/Coffee/src/images/preview.png)
