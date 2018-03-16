@@ -8,7 +8,7 @@
 
 ```
 $ git clone https://github.com/derek1210/MyProjects.git
-$ cd assignment-2-coffee
+$ cd Coffee 
 $ npm install
 ```
 
