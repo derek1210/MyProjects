@@ -17,3 +17,5 @@ $ npm install
 ```
 $ npm start
 ```
+
+![alt text](https://github.com/derek1210/MyProjects/edit/master/Coffee/src/images/preview.png)
