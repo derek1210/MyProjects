@@ -18,4 +18,4 @@ $ npm install
 $ npm start
 ```
 
-![Alt text](https://github.com/derek1210/MyProjects/edit/master/Coffee/src/images/preview.png)
+![Alt text](https://github.com/derek1210/MyProjects/blob/master/Coffee/src/images/preview.png)
