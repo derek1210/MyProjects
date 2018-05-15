@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { NavLink} from "react-router-dom";
-import cafe1 from './images/cafe1.png';
+import cafe1 from '../images/cafe1.png';
+import '../style/Search.css';
 
 // Similar to search: takes a word or phrase and translates to gif form
 class Translate extends Component {
@@ -14,7 +15,7 @@ class Translate extends Component {
     this.grabImages = this.grabImages.bind(this);
     this.doTranslate = this.doTranslate.bind(this);
     this.handleChange = this.handleChange.bind(this);
-}
+  }
 
 render() {
   // Lambda function controls rendering of gifs
@@ -30,35 +31,37 @@ render() {
        <h1>Translate</h1>
       <form onSubmit={this.doTranslate}>
           <span>
-            <input type="text" className="txtbox" placeholder="Translate your phrases into gifs" value={this.state.query} onChange={this.handleChange} />
+            <input type="text" className="txtbox" placeholder="Translate your phrases into gifs"
+             value={this.state.query} onChange={this.handleChange} />
             <input type="image" name="submit" src={cafe1} className="cafesize" value="" alt="Submit" />
           </span>
       </form>
       <div className="gifbox" ref="gifContainer">
         {renderedGifs}
       </div>
-    </div>
-  );
-}
-
-// Push the returned gif into a list to be rendered
-grabImages(data){
-  var ims = []
-  ims.push(data.images.fixed_height.url)
-  this.setState({gifs: ims})
+     </div>
+   );
  }
 
-// On each keyboard action, update the translate query
-handleChange(event) {
-  this.setState({query: event.target.value});
-}
+ // Push the returned gif into a list to be rendered
+  grabImages(data){
+    var ims = []
+    ims.push(data.images.fixed_height.url)
+    this.setState({gifs: ims})
+  }
 
-// Use the giphy translation api to return user's query 'translated' into gif form
-doTranslate(e) {
+  // On each keyboard action, update the translate query
+  handleChange(event) {
+    this.setState({query: event.target.value});
+  }
+
+  /* Use the giphy translation api to return user's query 'translated' into gif form
+     Based on code from class */
+  doTranslate(e) {
     e.preventDefault();
-    fetch("http://api.giphy.com/v1/gifs/translate?api_key=vRvUFu9f8SrzzJWqp9b7aiIKTqKExxA2&s="+this.state.query)
+    fetch("https://api.giphy.com/v1/gifs/translate?api_key=vRvUFu9f8SrzzJWqp9b7aiIKTqKExxA2&s="+this.state.query)
     .then(response => {
-        console.log(response.status, response.statusCode)
+        // console.log(response.status, response.statusCode)
         if (response.ok) {
             return response.json()
         } else {
@@ -66,13 +69,12 @@ doTranslate(e) {
         }
     })
     .then(json => {
-        console.log("Response ",json)
+        // console.log("Response ",json)
         this.grabImages(json.data)
 
     })
     .catch(error => console.log(error))
     }
-
 }
 
 export default Translate;

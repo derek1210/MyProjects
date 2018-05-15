@@ -1,0 +1,33 @@
+.inputForm {
+  border: 1px solid #fff;
+  display: inline-block;
+  margin: 8px 0;
+  padding: 15px 20px;
+  width: 30%;
+}
+
+.loginButton {
+  background-color: #61DAFB;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 8px 0;
+  padding: 15px 20px;
+  width: 30%;;
+}
+
+.loginButton:hover {
+  opacity: 0.8;
+}
+
+.login_form {
+  padding: 60px;
+}
+
+.pwHelp {
+  color: #61DAFB;
+}
+
+.deleteLink{
+  colour: white;
+}

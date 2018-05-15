@@ -1,0 +1,29 @@
+/* Footer Styling */
+.App-footer{
+  background-color: #222;
+  bottom: 0;
+  color: white;
+  margin: auto auto 0 auto;
+  position: fixed;
+  width: 100%
+}
+
+.App-footer p{
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+.l{
+  float: left
+}
+
+.r{
+  float: right
+}
+.App-footer a{
+  color: #FFF;
+}
+.foot{
+  padding-bottom: 5px;
+  vertical-align:middle;
+}

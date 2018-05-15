@@ -1,0 +1,19 @@
+
+
+.savedDisplay{
+  display: inline-block;
+  margin: 20px; /* adjust as needed */
+}
+
+figure img {
+    vertical-align: top;
+}
+
+
+figure figcaption {
+    text-align: center;
+}
+
+.deleteLink{
+  color: white;
+}

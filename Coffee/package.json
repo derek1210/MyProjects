@@ -1,17 +1,39 @@
 {
-  "name": "coffee",
-  "version": "0.1.0",
-  "private": true,
+  "name": "coffee-server",
+  "version": "1.0.0",
+  "description": "Server for the Coffee Gif App",
+  "main": "server/server.js",
+  "private": "true",
   "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1"
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "connect-mongo": "^2.0.1",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.4",
+    "mongoose": "^5.0.12"
+  },
+  "devDependencies": {
+    "concurrently": "3.1.0"
+  },
+  "directories": {
+    "doc": "docs"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "postinstall": "cd client && npm install",
+    "start": "concurrently --kill-others \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "server": "node server/server.js",
+    "client": "cd client && npm start",
+    "deploy": "./scripts/deploy.sh 'Updated'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csc309-18s/assignment-3-coffee.git"
+  },
+  "author": "Coffee Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csc309-18s/assignment-3-coffee/issues"
+  },
+  "homepage": "https://github.com/csc309-18s/assignment-3-coffee#readme"
 }

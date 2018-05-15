@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NavLink} from "react-router-dom";
+import '../style/Search.css';
 
 class Trending extends Component {
   constructor(props) {
@@ -46,11 +47,10 @@ class Trending extends Component {
 
   }
 
-  // Grab trending gifs from giphy
+  // Grab trending gifs from giphy. Based on code from class
   refreshTrends () {
-    fetch("http://api.giphy.com/v1/gifs/trending?api_key=vRvUFu9f8SrzzJWqp9b7aiIKTqKExxA2")
+    fetch("https://api.giphy.com/v1/gifs/trending?api_key=vRvUFu9f8SrzzJWqp9b7aiIKTqKExxA2")
     .then(response => {
-      console.log(response.status, response.statusCode)
       if (response.ok) {
         return response.json()
       } else {
@@ -58,7 +58,7 @@ class Trending extends Component {
       }
     })
     .then(json => {
-      console.log("Response ",json)
+      // console.log("Response ",json)
       this.grabImages(json.data)
 
     })

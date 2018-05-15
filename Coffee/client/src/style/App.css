@@ -1,0 +1,113 @@
+/* App.css: Application Wide stlying */
+
+/* Header styling */
+.App {
+  background-color: #222;
+  flex: 1;
+  min-height: 100%;
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  display: inline;
+  height: 3em;
+  padding-left: 10px;
+  vertical-align:middle;
+
+}
+
+.App-header {
+  background-color: #222;
+  color: white;
+  height: 3em;
+
+
+  text-align: left;
+  z-index: 10;
+}
+
+ul.header{
+  display: inline;
+  padding: 0
+}
+
+.rightHand {
+  float: right;
+  padding-top: 10px;
+}
+
+ul.header li{
+  display: inline;
+  list-style-type: none;
+}
+
+ul.header li a{
+  color: #FFF;
+  font-weight: bold;
+  padding: 20px;
+  text-decoration: none;
+}
+
+ul.header li a:hover{
+  text-decoration: underline;
+}
+
+.active{
+  /* background-color: #1DC85B; */
+  text-decoration: underline!important;
+}
+
+@media screen and (max-width: 600px){
+  ul.header{
+    padding: 0
+  }
+}
+
+.App-title {
+  display: inline;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Content styling */
+.content{
+    background-color: #222;
+    min-height:100vh;
+}
+
+.gifbox{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 62px;
+}
+
+.gif{
+  display: inline;
+  margin-left: auto;
+  margin-right: auto
+}
+.gif:hover{
+  opacity: 0.5;
+}
+
+h1, p, label{
+  color: white
+}
+
+label {
+  clear:left;
+  padding-bottom: 10px;
+  padding-right:10px;
+  text-align:right;
+  width:180px;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { NavLink} from "react-router-dom";
-import cafe1 from './images/cafe1.png';
+import cafe1 from '../images/cafe1.png';
+import '../style/Search.css';
 
 // Search for gifs
 class Search extends Component {
@@ -8,7 +9,7 @@ class Search extends Component {
     super(props);
 
     this.state = {
-      gifs: ['https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif'],
+      gifs: [],
       query: ""
     };
     this.grabImages = this.grabImages.bind(this);
@@ -58,12 +59,12 @@ class Search extends Component {
     this.setState({query: event.target.value});
   }
 
-  // Search for gifs using giphy api
+  // Search for gifs using giphy api. Based on code from class
   doSearch(e) {
       e.preventDefault(); // prevents a refresh when function is called
-      fetch("http://api.giphy.com/v1/gifs/search?api_key=vRvUFu9f8SrzzJWqp9b7aiIKTqKExxA2&q="+this.state.query)
+      fetch("https://api.giphy.com/v1/gifs/search?api_key=vRvUFu9f8SrzzJWqp9b7aiIKTqKExxA2&q="+this.state.query)
       .then(response => {  ////
-          console.log(response.status, response.statusCode)
+          // console.log(response.status, response.statusCode)
           if (response.ok) {
               return response.json()
           } else {
@@ -71,7 +72,7 @@ class Search extends Component {
           }
       })
       .then(json => {
-          console.log("Response ",json)
+          // console.log("Response ",json)
           this.grabImages(json.data)
 
       })
