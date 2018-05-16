@@ -63,11 +63,6 @@ unique identifier, which is used for facilitating saving and profile requests.
 See [docs/deploy.md](/docs/deploy.md)
 
 
-## Bugs
-
-1. Sometimes when searching/translating, the state change lags and the default search image
-is included in the search result for a second before disappearing.
-
 ## Schema
 
 ```
@@ -80,35 +75,3 @@ is included in the search result for a second before disappearing.
 }
 ```
 
-## To Do List
-- [x] Database  
-- [x] API endpoints  
-    - [x] login (post)  
-    - [x] register (post)  
-    - [x] save gif (put)  
-    - [x] delete saved gif (delete)  
-    - [x] delete account (delete)  
-    - [x] Get saved gifs for a user (get)
-    - [x] Password change (put)
-    - [x] Email change (put)
-    - [x] Name change (put)
-    - [x] Show all users (get)
-- [x] Connect to react ui
-  - [x] Session storage
-  - [x] Register (once user is logged in, the sign in button should be replaced with 'log out')
-  - [x] Login (once user is logged in, the sign in button should be replaced with 'log out')
-  - [x] Profile page (needs to link to change password, delete gif, display gifs/user info, and delete account)
-  - [x] Share (needs to link to add gif). Share page needs a button for saving, as well
-- [x] Documentation
-  - [x] deploy.md
-  - [x] api.md
-  - [x] solutions.md
-  - [x] instructions.md
-  - [x] attribution.md
-
-## Extras - if we have time
-
-- Save past searches
-- Password reset
-- Friends?
-- Upload
