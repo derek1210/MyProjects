@@ -1,0 +1,27 @@
+/* Search Boxes */
+
+.searchBar{
+  padding-top: 10px;
+}
+.txtbox{
+  background-color: transparent;
+  bottom:20px;
+  color:white ;
+  font-size:15pt;
+  height:30px;
+  padding: 4px;
+  vertical-align: middle;
+  width:400px;
+}
+
+.cafesize{
+  bottom: 0;
+  height:72px;
+  margin-left: 8px;
+  vertical-align: middle;
+  width:54px;
+}
+
+.cafesize:hover{
+  opacity: 0.5
+}

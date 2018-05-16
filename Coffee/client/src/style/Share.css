@@ -1,0 +1,13 @@
+/* Share buttons */
+.shareButton{
+  height: 50px;
+  width: 50px
+}
+
+.shareButton:hover{
+  opacity: 0.5
+}
+
+.shareBox{
+  padding-top: 40px;
+}
