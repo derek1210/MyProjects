@@ -1,0 +1,84 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{fullpage}
+\usepackage{comment}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{scrextend}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[margin=.5in]{geometry}
+\usepackage{parcolumns}
+\usepackage{kantlipsum}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows}
+\usepackage{fixltx2e}
+
+\newcommand{\iimplies}{\mbox{ IMPLIES }}
+\newcommand{\oor}{\mbox{ OR }}
+\newcommand{\aand}{\mbox{ AND }}
+\newcommand{\nnot}{\mbox{ NOT }}
+\newcommand{\iiff}{\mbox{ IFF }}
+\newcommand{\xxor}{\mbox{ XOR }}
+%\newcommand{\algorithmicbreak}{\textbf{break}}
+%\newcommand{\Break}{\State \algorithmicbreak}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{prop}[theorem]{Lemma}
+
+\MakeRobust{\Call}
+
+\begin{document}
+	
+	\begin{center}
+		{\bf \Large \bf CSC418H Assignment 3}
+	\end{center}
+	
+	\noindent
+	Derek Wong   1000858510 dereksy.wong@mail.utoronto.ca 
+	\\
+	YiMing Han   1000448642 yiming.han@mail.utoronto.ca\\	
+	
+	\begin{enumerate}
+		\item Overall submission \\
+		This submission includes all the code and everything we've used to produce assignment 3. 
+		We have included the images in the submission
+		\item Code \\
+		The code is straight forward and unchanged.  We've added a few flags to help testing, including MLTI\_LIGHT in main.cpp, ANTIALIASING, RAY\_TRACING\_DEPTH, GLOSSY\_REFLECTION and HARD\_SHADOW in raytracer.cpp.  Softshadow is enabled automatically if HARD\_SHADOW is set.  We turn off alot of these flags for debugging. 
+		\item Features\\
+		We first showcase the basic features required for part A:\\
+		\includegraphics[scale=0.5]{sig1} \\
+			\includegraphics[scale=0.5]{sig2} \\
+			\includegraphics[scale=0.5]{diffuse1} \\
+			\includegraphics[scale=0.5]{diffuse2} \\
+				\includegraphics[scale=0.5]{phong1} \\
+			\includegraphics[scale=0.5]{phong2} \\
+			\clearpage
+		Now we look at Part b implementations.  A lot of the pictures we show already includes a basic texture map.  
+		\begin{enumerate}
+			\item Hard Shadow : refer hardshadow2, or turn on HARD\_SHADOW flag and build yourself \\
+				\includegraphics[scale=0.5]{hardshadow2} \\
+			\item Global Illumination:   We show global illumination by putting a mirror on the scene. \\
+			\includegraphics[scale=0.5]{reflection} \\
+			\item  Glossy Reflection:  We Sampled from a normal distribution on incident reflection to achieve this effect:\\
+				\includegraphics[scale=0.3]{glossy_reflection} \\
+			\item Soft Shadows : We Sampled from a gaussian distribution on shadow checking to achieve this effect:  Notice the shadow on the right is soft\\
+				\includegraphics[scale=0.5]{soft_shadows2} \\
+			\item Anti Aliasing:  We used Jitter method for AA.  Here is a comparasion from last image:  Notice that shadow is smoother.  We can make it even better if we have more samples, this is just a showcase thats our implmentation works\\
+			\includegraphics[scale=0.5]{soft_shadows_AA2} \\
+			\item Texture Mapping:  We show a texture map of a plane and a sphere:\\
+				\includegraphics[scale=0.3]{texture_map} \\
+				
+				\item Environment Mapping:  We show an environment map with reflection by a sphere from 2 different angles:\\
+				\includegraphics[scale=0.4]{env_map} \\
+				\includegraphics[scale=0.4]{env_map2} \\
+		\end{enumerate}
+	\end{enumerate}
+
+	\end{document}
+
