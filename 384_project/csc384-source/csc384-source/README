@@ -1,0 +1,15 @@
+Author:
+Derek Wong
+Kyle Tam
+
+These are the python files for the implmentation of the flow free game.
+
+To run all test case:
+  press run or run the main function of solution.py
+  
+You can run FlowFree.py and on the console run PROBLEMS[n].print_state() to see the nth problem
+
+This is what's in the files:
+  FlowFree.py: State functions of flow free. The file contains mainly the implmentation of the game
+  search.py: This file is from the starter code of A1
+  solution.py: The heuristic that we used are in this file. Also the main funtion to run all the test cases.
