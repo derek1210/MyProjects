@@ -5,4 +5,4 @@
 3. CoachIt: A website for athletic clubs to help organize the clubs' activities, incorporating its members. 
 4. Coffee: A website that allows users to save, categorize and share GIFs.
 5. ext2: a file system ext2.
-6. raytracer 
+6. raytracer: image rendering 
