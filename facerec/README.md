@@ -1,6 +1,6 @@
 # Face Recognition Web App
 
-# Try it out:
+## Try it out:
 https://myfacerec.herokuapp.com/
 
 Log in with 
