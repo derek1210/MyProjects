@@ -6,3 +6,4 @@
 4. Coffee: A website that allows users to save, categorize and share GIFs.
 5. ext2: a file system ext2.
 6. raytracer: image rendering 
+7. facerec: A website that detects the presence and location of human faces in an image.
