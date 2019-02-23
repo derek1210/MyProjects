@@ -22,16 +22,16 @@ class App extends Component {
       <AlertProvider template={AlertTemplate}>
       <HashRouter>
         <div className="App">
-        <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <h1 className="App-title">Coffee</h1>
-                <ul className="header">
-                  <li><NavLink exact to="/">Trending</NavLink></li>
-                  <li><NavLink to="/search">Search</NavLink></li>
-                  <li><NavLink to="/translate">Translate</NavLink></li>
-                  <li><NavLink to="/profile">Profile</NavLink></li>
-                  <li className="rightHand"><NavLink to="/login" onClick={this.logOut}>Log {this.getStatus()}</NavLink></li>
-                </ul>
+          <header className="App-header">
+              <img src={logo} className="App-logo" alt="logo" />
+              <h1 className="App-title">Coffee</h1>
+              <ul className="header">
+                <li><NavLink exact to="/">Trending</NavLink></li>
+                <li><NavLink to="/search">Search</NavLink></li>
+                <li><NavLink to="/translate">Translate</NavLink></li>
+                <li><NavLink to="/profile">Profile</NavLink></li>
+                <li className="rightHand"><NavLink to="/login" onClick={this.logOut}>Log {this.getStatus()}</NavLink></li>
+              </ul>
           </header>
           <div className="content">
             <Route exact path="/" component={Trending}/>
